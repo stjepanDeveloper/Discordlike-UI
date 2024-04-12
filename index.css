@@ -1,0 +1,16 @@
+/* index.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apply the styling to groups so you can target the children and use hovers and colors for them */
+@layer components {
+  .sidebar-icon {
+    @apply relative flex items-center justify-center h-12 w-12 mt-2 mb-2 mx-auto shadow-lg bg-discordPurple text-white hover:bg-discordDark hover:text-discordLight rounded-3xl hover:rounded-xl transition-all ease-linear cursor-pointer;
+  }
+
+  .sidebar-tooltip {
+    @apply absolute w-auto p-2 m-2 min-w-max left-14 rounded-md shadow-md text-white bg-discordDark text-xs font-bold transition-all duration-100 scale-0 origin-left;
+  }
+}
